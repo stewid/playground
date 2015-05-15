@@ -12,6 +12,4 @@ install:
         md C:\Rextsoft
         Invoke-WebRequest http://www.stats.ox.ac.uk/pub/Rtools/goodies/multilib/local320.zip -OutFile "C:\Rextsoft\local320.zip"
         7z x C:\Rextsoft\local320.zip -oC:\Rextsoft -r
-        $makeconf = $RDrive + "\R\etc\i386\Makeconf"
-        $makeconf_tmp = $RDrive + "\R\etc\i386\Makeconf_tmp"
-        sed "s#^LOCAL_SOFT = d:/RCompile/r-compiling/local/local320#LOCAL_SOFT = C:/Rextsoft#" $makeconf > $makeconf_tmp
+        sed "s#^LOCAL_SOFT = d:/RCompile/r-compiling/local/local320#LOCAL_SOFT = C:/Rextsoft#" E:\R\etc\i386\Makeconf > E:\R\etc\i386\Makeconf_tmp
