@@ -8,4 +8,6 @@ init:
 install:
   ps: |
         Bootstrap
+        Progress "Downloading external software"
         md C:\Rextsoft
+        Invoke-WebRequest http://www.stats.ox.ac.uk/pub/Rtools/goodies/multilib/local320.zip -OutFile "C:\local320.zip"
