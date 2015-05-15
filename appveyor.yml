@@ -10,4 +10,5 @@ install:
         Bootstrap
         Progress "Downloading external software"
         md C:\Rextsoft
-        Invoke-WebRequest http://www.stats.ox.ac.uk/pub/Rtools/goodies/multilib/local320.zip -OutFile "C:\local320.zip"
+        Invoke-WebRequest http://www.stats.ox.ac.uk/pub/Rtools/goodies/multilib/local320.zip -OutFile "C:\Rextsoft\local320.zip"
+        7z x C:\Rextsoft\local320.zip
