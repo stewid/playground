@@ -6,5 +6,6 @@ init:
         Import-Module '..\appveyor-tool.ps1'
 
 install:
-  ps: Bootstrap
-  ps: md C:\Rextsoft
+  ps: |
+        Bootstrap
+        md C:\Rextsoft
