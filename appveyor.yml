@@ -7,3 +7,4 @@ init:
 
 install:
   ps: Bootstrap
+  ps: md C:\Rextsoft
