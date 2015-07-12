@@ -68,3 +68,14 @@ add(repo, "README.md")
 commit(repo, "Another test with git2r")
 push(repo, credentials = cred)
 ```
+
+## Test `cred_env` with `git2r`
+
+Make changes in README.md
+
+```r
+add(repo, "README.md")
+commit(repo, "Another test with git2r")
+cred <- cred_env("GH_USER", "GH_PAT")
+push(repo, credentials = cred)
+```
