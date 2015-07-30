@@ -79,3 +79,19 @@ commit(repo, "Another test with git2r")
 cred <- cred_env("GH_USER", "GH_PAT")
 push(repo, credentials = cred)
 ```
+
+## Test ssh with git2r on Windows
+
+```r
+library(git2r)
+cred <- cred_ssh_key("~/.ssh/id_rsa.pub", "~/.ssh/id_rsa")
+repo <- clone("git@github.com:stewid/playground.git", "playground", credentials = cred)
+```
+
+Make changes in README.md
+
+```r
+add(repo, "README.md")
+commit(repo, "Test ssh with git2r on Windows")
+push(repo, credentials = cred)
+```
