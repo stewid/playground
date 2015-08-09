@@ -95,3 +95,29 @@ add(repo, "README.md")
 commit(repo, "Test ssh with git2r on Windows")
 push(repo, credentials = cred)
 ```
+
+## Test ssh with git2r on OSX
+
+Make changes in README.md
+
+```r
+> sessionInfo()
+```
+
+```r
+#> R version 3.2.0 (2015-04-16)
+#> Platform: x86_64-apple-darwin13.4.0 (64-bit)
+#> Running under: OS X 10.10.1 (Yosemite)
+#>
+#> locale:
+#> [1] C
+#>
+#> attached base packages:
+#> [1] stats     graphics  grDevices utils     datasets  methods   base
+#>
+#> other attached packages:
+#> [1] git2r_0.10.1.9000
+#>
+#> loaded via a namespace (and not attached):
+#> [1] compiler_3.2.0 tools_3.2.0
+```
