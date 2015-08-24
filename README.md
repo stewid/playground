@@ -121,3 +121,14 @@ Make changes in README.md
 #> loaded via a namespace (and not attached):
 #> [1] compiler_3.2.0 tools_3.2.0
 ```
+
+## Test push with git2r
+
+Make changes in README.md
+
+```r
+add(repo, "README.md")
+commit(repo, "Test push with git2r", session = TRUE)
+cred <- cred_env("GITHUB_USER", "GITHUB_TOKEN")
+push(repo, credentials = cred)
+```
