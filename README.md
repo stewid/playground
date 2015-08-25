@@ -132,3 +132,5 @@ commit(repo, "Test push with git2r", session = TRUE)
 cred <- cred_env("GITHUB_USER", "GITHUB_TOKEN")
 push(repo, credentials = cred)
 ```
+
+## Another test to push with git2r
