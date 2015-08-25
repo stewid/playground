@@ -134,3 +134,12 @@ push(repo, credentials = cred)
 ```
 
 ## Another test to push with git2r
+
+## Test push with git2r
+
+```r
+add(repo, "README.md")
+commit(repo, "Test push with cred_token", session = TRUE)
+cred <- cred_token()
+push(repo, credentials = cred)
+```
